@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Stop Watch</title>
+    <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png"/>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Timer And StopWatch</a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item" style="margin-left: 5rem; font-size: 20px;">
+              <a class="nav-link" href="index.html">StopWatch</a>
+            </li>
+            
+            <li class="nav-item" style="margin-left: 55rem; font-size: 20px;">
+              <a class="nav-link" href="../timer/timer.html">Custom Timer</a>
+            </li>
+            
+            
+          </ul>
+          
+        </div>
+      </nav>
+    <div id="container">
+        <h1 style="text-align:center; margin-top: 1rem;">STOP WATCH</h1>
+       <img src="./clock.png" alt="clock image" width="150" height="150">
+        <div id="time">
+            <span>
+                <span class="digit" id="hr">00</span>
+                <span class="txt">Hr</span>
+            </span>
+            <span>
+                <span class="digit" id="min">00</span>
+                <span class="txt">Min</span>
+            </span>
+            <span>
+                <span class="digit" id="sec">00</span>
+                <span class="txt">Sec</span>
+            </span>
+
+            <span class="digit" id="count">00</span>
+
+        </div>
+
+        <div id="btn-container">
+            <hr>
+            <button class="btn" id="start" onclick="start()">Start</button>
+            <button class="btn" id="stop" onclick="stop()">Stop</button>
+            <button class="btn" id="reset" onclick="reset()">Reset</button>
+        </div>
+        <hr>
+        <div>
+            <ul id="laps" style="list-style-type:none;">
+                <li>
+                    <span id="li-hr"></span>
+                    <span id="li-min"></span>
+                    <span id="li-sec"></span>
+                    <span id="li-count"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
